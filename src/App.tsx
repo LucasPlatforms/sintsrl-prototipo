@@ -55,15 +55,40 @@ const services = [
   },
 ];
 
-const featuredClients = [
-  { name: 'Petronas', category: 'Energia & industria' },
-  { name: 'Salvatore Ferragamo', category: 'Moda & retail' },
-  { name: 'Milanosport', category: 'Sport & cultura' },
-  { name: 'Sogemi', category: 'Agroalimentare' },
-  { name: 'IKEA', category: 'Retail' },
-  { name: 'Comune di Milano', category: 'Pubblica amministrazione' },
-  { name: 'Bosch', category: 'Tecnologia' },
-  { name: 'Terna', category: 'Infrastrutture' },
+const caseStudies = [
+  {
+    number: '01',
+    client: 'Petronas',
+    title: 'Sicurezza integrata per impianti energetici',
+    description:
+      'Progettazione completa dei sistemi di sicurezza globale per un sito energetico di grandi dimensioni: antintrusione, TVCC, controllo accessi e centralizzazione di tutti gli impianti tecnologici.',
+    tags: ['Risk management', 'TVCC', 'Controllo accessi'],
+    image:
+      'https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Sala di controllo industriale con pannelli elettrici',
+  },
+  {
+    number: '02',
+    client: 'Salvatore Ferragamo',
+    title: 'Building automation per flagship store',
+    description:
+      'Automazione e sicurezza integrata per la sede e i punti vendita: gestione accessi, videosorveglianza e supervisione centralizzata degli impianti in tempo reale.',
+    tags: ['Building automation', 'Supervisione'],
+    image:
+      'https://images.pexels.com/photos/558630/pexels-photo-558630.png?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Edificio moderno con telecamera di sorveglianza',
+  },
+  {
+    number: '03',
+    client: 'Terna',
+    title: 'Centralizzazione impianti su scala nazionale',
+    description:
+      'Sistema di supervisione regionale e nazionale per il coordinamento dei sistemi di sicurezza su siti distribuiti sul territorio, con reporting centralizzato e adeguamento normativo.',
+    tags: ['Centralizzazione', 'Networking', 'Capitolati'],
+    image:
+      'https://images.pexels.com/photos/37730211/pexels-photo-37730211.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Server rack con illuminazione blu in data center',
+  },
 ];
 
 const clientNames = [
@@ -249,32 +274,42 @@ progettazione ed esecuzione.</p>
           </div>
         </section>
 
-        {/* CLIENTI */}
+        {/* CASE STUDIES */}
         <section className="section clients" id="clienti">
           <div className="container">
             <div className="clients-header">
               <div>
-                <div className="section-kicker">03 — Clienti</div>
+                <div className="section-kicker">03 — Case study</div>
                 <h2>
                   Scelti da chi<br /><span>non può rischiare.</span>
                 </h2>
               </div>
               <p>
-                Negli anni abbiamo affiancato aziende, enti e organizzazioni in
-                progetti complessi. La fiducia dei nostri clienti è il risultato
-                più importante.
+                Non un elenco di loghi, ma storie concrete. Ogni progetto racconta
+                come abbiamo trasformato un'esigenza di sicurezza in un sistema
+                funzionante e verificato.
               </p>
             </div>
-            <div className="featured-client-grid">
-              {featuredClients.map((client, index) => (
-                <article
-                  className={`client-card ${index === 0 ? 'client-card--accent' : ''}`}
-                  key={client.name}
-                >
-                  <span className="client-index">0{index + 1}</span>
-                  <h3>{client.name}</h3>
-                  <p>{client.category}</p>
-                  <ArrowUpRight size={20} />
+            <div className="case-study-list">
+              {caseStudies.map((cs) => (
+                <article className="case-study" key={cs.number}>
+                  <div className="case-study__media">
+                    <img src={cs.image} alt={cs.alt} loading="lazy" />
+                    <span className="case-study__num">{cs.number}</span>
+                  </div>
+                  <div className="case-study__body">
+                    <span className="case-study__client">{cs.client}</span>
+                    <h3>{cs.title}</h3>
+                    <p>{cs.description}</p>
+                    <div className="case-study__tags">
+                      {cs.tags.map((tag) => (
+                        <span key={tag}>{tag}</span>
+                      ))}
+                    </div>
+                    <a className="text-link" href="#contatti">
+                      Parliamo del tuo progetto <ArrowUpRight size={17} />
+                    </a>
+                  </div>
                 </article>
               ))}
             </div>
