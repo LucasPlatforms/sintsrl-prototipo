@@ -59,10 +59,8 @@ const caseStudies = [
   {
     number: '01',
     client: 'Petronas',
-    title: 'Sicurezza integrata per impianti energetici',
     description:
-      'Progettazione completa dei sistemi di sicurezza globale per un sito energetico di grandi dimensioni: antintrusione, TVCC, controllo accessi e centralizzazione di tutti gli impianti tecnologici.',
-    tags: ['Risk management', 'TVCC', 'Controllo accessi'],
+      'Sicurezza integrata per un sito energetico: antintrusione, TVCC, controllo accessi e centralizzazione impianti.',
     image:
       'https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     alt: 'Sala di controllo industriale con pannelli elettrici',
@@ -70,10 +68,8 @@ const caseStudies = [
   {
     number: '02',
     client: 'Salvatore Ferragamo',
-    title: 'Building automation per flagship store',
     description:
-      'Automazione e sicurezza integrata per la sede e i punti vendita: gestione accessi, videosorveglianza e supervisione centralizzata degli impianti in tempo reale.',
-    tags: ['Building automation', 'Supervisione'],
+      'Building automation per la sede e i punti vendita: gestione accessi, videosorveglianza e supervisione centralizzata.',
     image:
       'https://images.pexels.com/photos/558630/pexels-photo-558630.png?auto=compress&cs=tinysrgb&h=650&w=940',
     alt: 'Edificio moderno con telecamera di sorveglianza',
@@ -81,10 +77,8 @@ const caseStudies = [
   {
     number: '03',
     client: 'Terna',
-    title: 'Centralizzazione impianti su scala nazionale',
     description:
-      'Sistema di supervisione regionale e nazionale per il coordinamento dei sistemi di sicurezza su siti distribuiti sul territorio, con reporting centralizzato e adeguamento normativo.',
-    tags: ['Centralizzazione', 'Networking', 'Capitolati'],
+      'Supervisione regionale e nazionale dei sistemi di sicurezza su siti distribuiti, con reporting centralizzato e adeguamento normativo.',
     image:
       'https://images.pexels.com/photos/37730211/pexels-photo-37730211.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     alt: 'Server rack con illuminazione blu in data center',
@@ -299,16 +293,7 @@ progettazione ed esecuzione.</p>
                   </div>
                   <div className="case-study__body">
                     <span className="case-study__client">{cs.client}</span>
-                    <h3>{cs.title}</h3>
                     <p>{cs.description}</p>
-                    <div className="case-study__tags">
-                      {cs.tags.map((tag) => (
-                        <span key={tag}>{tag}</span>
-                      ))}
-                    </div>
-                    <a className="text-link" href="#contatti">
-                      Parliamo del tuo progetto <ArrowUpRight size={17} />
-                    </a>
                   </div>
                 </article>
               ))}
