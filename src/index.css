@@ -65,36 +65,11 @@ a {
   align-items: center;
   color: #0a0c0b;
   font-family: 'Manrope', sans-serif;
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 800;
-  letter-spacing: -0.14em;
+  letter-spacing: -0.08em;
   line-height: 1;
-}
-
-.brand-mark__symbol {
-  width: 33px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  font-size: 39px;
-  font-weight: 800;
-  letter-spacing: -0.22em;
-}
-
-.brand-mark__dot {
-  position: absolute;
-  background: var(--green);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  bottom: 2px;
-  right: 3px;
-}
-
-.brand-mark__name {
-  margin-left: 2px;
+  text-transform: lowercase;
 }
 
 .brand-mark--inverse {
@@ -424,6 +399,10 @@ h3 em {
   margin-bottom: 55px;
 }
 
+.service-top span {
+  font-weight: 700;
+}
+
 .service-card h3 {
   font-size: 20px;
   letter-spacing: -0.035em;
@@ -670,29 +649,53 @@ h3 em {
 .site-footer {
   background: #101712;
   color: white;
-  padding: 28px 0;
+  padding: 36px 0;
 }
 
 .footer-inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
-.footer-note {
+.footer-info {
   display: flex;
-  gap: 32px;
+  flex-direction: column;
+  gap: 3px;
   color: #93a097;
   font-size: 11px;
 }
 
-.footer-note span {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
+.footer-company {
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
 }
 
-.footer-note svg {
+.footer-address {
+  color: #93a097;
+}
+
+.footer-piva {
+  color: #93a097;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #aeb8b1;
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
   color: #78cc8f;
 }
 
@@ -847,18 +850,13 @@ h3 em {
   }
 
   .footer-inner {
-    flex-wrap: wrap;
-    gap: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 
-  .footer-note {
-    order: 3;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .back-top {
-    margin-left: auto;
+  .footer-links {
+    order: 4;
   }
 }
 
@@ -899,8 +897,7 @@ h3 em {
     font-size: 12px;
   }
 
-  .footer-note {
-    gap: 10px;
+  .footer-info {
     font-size: 10px;
   }
 }
