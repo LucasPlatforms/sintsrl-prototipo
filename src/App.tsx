@@ -343,7 +343,7 @@ progettazione ed esecuzione.</p>
                   <Mail size={18} /> info@sintsrl.it
                 </a>
                 <a href="tel:+390362154593">
-                  <Phone size={18} /> 0362 154593
+                  <Phone size={18} /> 0362 1545393
                 </a>
               </div>
               <div className="address">
