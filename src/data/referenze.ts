@@ -9,9 +9,9 @@ export interface CaseStudy {
 export const caseStudies: CaseStudy[] = [
   {
     number: '01',
-    client: 'Petronas',
+    client: 'Petronas LUBRIFICANTI ITALIA',
     description:
-      'Sicurezza integrata per un sito energetico: antintrusione, TVCC, controllo accessi e centralizzazione impianti.',
+      'Realizzazione del sistema di videosorveglianza e di protezione perimetrale per i siti di Villastellone e Santena (TO)',
     image:
       'https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     alt: 'Sala di controllo industriale con pannelli elettrici',
