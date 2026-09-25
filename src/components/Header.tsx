@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
 import BrandMark from './BrandMark';
 import { navItems, navCta } from '@/data/contatti';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -16,13 +18,24 @@ export default function Header() {
           aria-label="Navigazione principale"
         >
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} onClick={closeMenu}>
+            <NavLink
+              key={item.href}
+              to={item.href}
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive ? 'nav-link nav-link--active' : 'nav-link'
+              }
+            >
               {item.label}
-            </a>
+            </NavLink>
           ))}
-          <a className="nav-cta" href={navCta.href} onClick={closeMenu}>
+          <Link
+            className="nav-cta"
+            to={navCta.href}
+            onClick={closeMenu}
+          >
             {navCta.label} <ArrowUpRight size={16} />
-          </a>
+          </Link>
         </nav>
         <button
           className="menu-toggle"

@@ -3,6 +3,7 @@ export interface CaseStudy {
   description: string;
   image: string;
   alt: string;
+  settore: string;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -10,9 +11,9 @@ export const caseStudies: CaseStudy[] = [
     client: 'Petronas',
     description:
       'Sicurezza integrata per un sito energetico: antintrusione, TVCC, controllo accessi e centralizzazione impianti.',
-    image:
-      'https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Sala di controllo industriale con pannelli elettrici',
+    image: '/Petronas_logo.svg',
+    alt: 'Logo Petronas',
+    settore: 'Energia',
   },
   {
     client: 'Salvatore Ferragamo',
@@ -21,6 +22,7 @@ export const caseStudies: CaseStudy[] = [
     image:
       'https://images.pexels.com/photos/558630/pexels-photo-558630.png?auto=compress&cs=tinysrgb&h=650&w=940',
     alt: 'Edificio moderno con telecamera di sorveglianza',
+    settore: 'Retail',
   },
   {
     client: 'Terna',
@@ -29,6 +31,7 @@ export const caseStudies: CaseStudy[] = [
     image:
       'https://images.pexels.com/photos/37730211/pexels-photo-37730211.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     alt: 'Server rack con illuminazione blu in data center',
+    settore: 'Energia',
   },
 ];
 
@@ -51,6 +54,15 @@ export const clientNames: string[] = [
   'N.G.S.',
   'Sanofi Aventis',
 ];
+
+export const settori: string[] = ['Tutte', 'Energia', 'Retail', 'Trasporti', 'Pubblica amministrazione'];
+
+export const clientiPage = {
+  kicker: 'Clienti',
+  heading: ['Scelti da chi', 'non può rischiare.'],
+  description:
+    'Non un elenco di loghi, ma storie concrete. Ogni progetto racconta come abbiamo trasformato un\'esigenza di sicurezza in un sistema funzionante e verificato.',
+};
 
 export const referenzeIntro = {
   kicker: '03 — Case study',

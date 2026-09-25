@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import BrandMark from './BrandMark';
 import { contatti } from '@/data/contatti';
@@ -15,12 +16,12 @@ export default function Footer() {
           <span className="footer-piva">P.IVA e C.F. {contatti.piva}</span>
         </div>
         <div className="footer-links">
-          <a href="#">Privacy policy</a>
-          <a href="#">Cookie policy</a>
+          <Link to="/privacy">Privacy policy</Link>
+          <Link to="/cookie-policy">Cookie policy</Link>
         </div>
-        <a href="#top" className="back-top">
+        <Link to="/" className="back-top">
           Torna su <ChevronDown size={16} />
-        </a>
+        </Link>
       </div>
     </footer>
   );

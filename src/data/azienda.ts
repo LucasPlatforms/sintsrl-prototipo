@@ -18,8 +18,8 @@ export const hero = {
   aside: 'Scorri per conoscere SINT',
   stats: [
     { value: '1990', label: 'anno di fondazione' },
-    { value: '+30', label: 'anni di esperienza' },
-    { value: '360°', label: 'visione del progetto' },
+    { value: '100+', label: 'siti coordinati per Terna' },
+    { value: '24', label: 'centri Poste Italiane' },
   ] as HeroStat[],
 };
 
@@ -54,6 +54,12 @@ export const team: TeamMember[] = [
   { name: 'Ing. Arch. Annamaria Seveso', role: 'Progettazione architettonica, strutturale e di restauro' },
   { name: 'Arch. Pierluca Arosio', role: 'Progettazione architettonica e pianificazione urbana' },
 ];
+
+export const chiSiamoPage = {
+  kicker: 'Chi siamo',
+  heading: ['Persone, metodo', 'e competenza tecnica.'],
+  subheading: 'SINT S.r.l. — sicurezza globale dal 1990',
+};
 
 export const contattiSection = {
   kicker: '04 — Dove siamo',

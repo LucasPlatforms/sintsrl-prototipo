@@ -43,6 +43,11 @@ export const services: Service[] = [
   },
 ];
 
+export const serviziPage = {
+  kicker: 'Servizi',
+  heading: ['La sicurezza,', 'progettata bene.'],
+};
+
 export const serviziIntro = {
   kicker: '02 — Cosa facciamo',
   heading: ['La sicurezza,', 'progettata bene.'],
