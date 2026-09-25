@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react';
-import { azienda } from '@/data/azienda';
+import { azienda, team } from '@/data/azienda';
 
 export default function AziendaSection() {
   return (
@@ -19,6 +19,27 @@ export default function AziendaSection() {
             {azienda.principles.map((principle) => (
               <span key={principle}><Check size={16} /> {principle}</span>
             ))}
+          </div>
+          <div className="partnership">
+            <span><Check size={16} /> {azienda.partnership}</span>
+          </div>
+          <div className="team">
+            <p className="team-title">Il team</p>
+            <div className="team-grid">
+              {team.map((member) => (
+                <div className="team-member" key={member.name}>
+                  <p className="team-member__name">{member.name}</p>
+                  <p className="team-member__role">{member.role}</p>
+                  {member.qualifications && (
+                    <ul className="team-member__qualifications">
+                      {member.qualifications.map((q, i) => (
+                        <li key={i}>{q}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

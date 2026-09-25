@@ -12,17 +12,21 @@ export default function ServiziSection() {
             </h2>
             <div className="intro-text-grid">
               {serviziIntro.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
+                <div key={i} className="structured-paragraph">
+                  <p className="structured-paragraph__lead">{p.lead}</p>
+                  <ul className="structured-paragraph__items">
+                    {p.items.map((item, j) => (
+                      <li key={j}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               ))}
             </div>
           </div>
         </div>
         <div className="service-grid">
           {services.map((service) => (
-            <article className="service-card" key={service.number}>
-              <div className="service-top">
-                <span>{service.number}</span>
-              </div>
+            <article className="service-card" key={service.title}>
               <h3>{service.title}</h3>
               <p>{service.text}</p>
             </article>

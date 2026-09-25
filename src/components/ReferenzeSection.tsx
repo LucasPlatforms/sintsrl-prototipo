@@ -15,10 +15,9 @@ export default function ReferenzeSection() {
         </div>
         <div className="case-study-list">
           {caseStudies.map((cs) => (
-            <article className="case-study" key={cs.number}>
+            <article className="case-study" key={cs.client}>
               <div className="case-study__media">
                 <img src={cs.image} alt={cs.alt} loading="lazy" />
-                <span className="case-study__num">{cs.number}</span>
               </div>
               <div className="case-study__body">
                 <span className="case-study__client">{cs.client}</span>

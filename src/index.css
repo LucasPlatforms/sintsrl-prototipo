@@ -391,22 +391,11 @@ h3 em {
   transform: translateY(-3px);
 }
 
-.service-top {
-  display: flex;
-  justify-content: space-between;
-  color: #78cc8f;
-  font-size: 12px;
-  margin-bottom: 55px;
-}
-
-.service-top span {
-  font-weight: 700;
-}
-
 .service-card h3 {
   font-size: 20px;
   letter-spacing: -0.035em;
   margin-bottom: 12px;
+  margin-top: 0;
 }
 
 .service-card p {
@@ -414,6 +403,122 @@ h3 em {
   font-size: 13px;
   line-height: 1.6;
   max-width: 280px;
+}
+
+/* ===== STRUCTURED PARAGRAPHS ===== */
+
+.structured-paragraph {
+  margin: 0;
+}
+
+.structured-paragraph__lead {
+  color: #aab6ae;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.structured-paragraph__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.structured-paragraph__items li {
+  color: #aab6ae;
+  font-size: 14px;
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.structured-paragraph__items li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #75cf91;
+}
+
+/* ===== TEAM ===== */
+
+.partnership {
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.partnership span {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.partnership svg {
+  color: var(--green);
+  flex: 0 0 auto;
+}
+
+.team {
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  padding-top: 36px;
+}
+
+.team-title {
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team-member {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.team-member__name {
+  font: 700 15px 'Manrope', sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.team-member__role {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.team-member__qualifications {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.team-member__qualifications li {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  padding-left: 14px;
+  position: relative;
+}
+
+.team-member__qualifications li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--green);
 }
 
 /* ===== CLIENTS ===== */
@@ -482,18 +587,6 @@ h3 em {
 
 .case-study:hover .case-study__media img {
   transform: scale(1.04);
-}
-
-.case-study__num {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: rgba(23, 34, 29, 0.85);
-  color: #fff;
-  font: 700 13px 'Manrope', sans-serif;
-  letter-spacing: 0.05em;
-  padding: 7px 14px;
-  z-index: 2;
 }
 
 .case-study__body {
@@ -816,8 +909,8 @@ h3 em {
     min-height: auto;
   }
 
-  .service-top {
-    margin-bottom: 40px;
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 
   .case-study {

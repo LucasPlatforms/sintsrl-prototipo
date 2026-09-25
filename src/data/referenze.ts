@@ -1,5 +1,4 @@
 export interface CaseStudy {
-  number: string;
   client: string;
   description: string;
   image: string;
@@ -8,16 +7,14 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
-    number: '01',
-    client: 'Petronas LUBRIFICANTI ITALIA',
+    client: 'Petronas',
     description:
-      'Realizzazione del sistema di videosorveglianza e di protezione perimetrale per i siti di Villastellone e Santena (TO)',
+      'Sicurezza integrata per un sito energetico: antintrusione, TVCC, controllo accessi e centralizzazione impianti.',
     image:
       'https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     alt: 'Sala di controllo industriale con pannelli elettrici',
   },
   {
-    number: '02',
     client: 'Salvatore Ferragamo',
     description:
       'Building automation per la sede e i punti vendita: gestione accessi, videosorveglianza e supervisione centralizzata.',
@@ -26,7 +23,6 @@ export const caseStudies: CaseStudy[] = [
     alt: 'Edificio moderno con telecamera di sorveglianza',
   },
   {
-    number: '03',
     client: 'Terna',
     description:
       'Supervisione regionale e nazionale dei sistemi di sicurezza su siti distribuiti, con reporting centralizzato e adeguamento normativo.',
