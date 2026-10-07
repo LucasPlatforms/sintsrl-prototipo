@@ -892,79 +892,7 @@ h3 em {
   border-color: var(--ink);
 }
 
-/* ===== CONTACT FORM ===== */
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.contact-form__row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-.contact-form__field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.contact-form__field label {
-  color: #aab6ae;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.contact-form__field input,
-.contact-form__field textarea {
-  background: #1a2b20;
-  border: 1px solid #3a4a40;
-  color: #fff;
-  padding: 12px 14px;
-  font-size: 14px;
-  font-family: inherit;
-  border-radius: 2px;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.contact-form__field input:focus,
-.contact-form__field textarea:focus {
-  border-color: #75cf91;
-}
-
-.contact-form__field textarea {
-  resize: vertical;
-}
-
-.contact-form__submit {
-  align-self: flex-start;
-  margin-top: 6px;
-}
-
-.contact-form__note {
-  color: #aab6ae;
-  font-size: 12px;
-  margin-top: 4px;
-}
-
-.contact-form-success {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 40px 0;
-  color: #75cf91;
-  text-align: center;
-}
-
-.contact-form-success p {
-  color: #fff;
-  font-size: 15px;
-}
+/* ===== CONTACT INFO ===== */
 
 .contact-heading {
   font-size: clamp(28px, 3vw, 38px);
@@ -1163,10 +1091,6 @@ h3 em {
 
   .page-hero {
     padding: 120px 0 50px;
-  }
-
-  .contact-form__row {
-    grid-template-columns: 1fr;
   }
 
   .footer-inner {
