@@ -60,13 +60,9 @@ export const settori: string[] = ['Tutte', 'Energia', 'Retail', 'Trasporti', 'Pu
 export const clientiPage = {
   kicker: 'Clienti',
   heading: ['Scelti da chi', 'non può rischiare.'],
-  description:
-    'Non un elenco di loghi, ma storie concrete. Ogni progetto racconta come abbiamo trasformato un\'esigenza di sicurezza in un sistema funzionante e verificato.',
 };
 
 export const referenzeIntro = {
   kicker: 'Case study',
   heading: ['Scelti da chi', 'non può rischiare.'],
-  description:
-    'Non un elenco di loghi, ma storie concrete. Ogni progetto racconta come abbiamo trasformato un\'esigenza di sicurezza in un sistema funzionante e verificato.',
 };

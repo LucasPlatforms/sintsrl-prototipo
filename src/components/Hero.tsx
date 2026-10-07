@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { MoveRight, ArrowUpRight } from 'lucide-react';
 import { hero } from '@/data/azienda';
 
@@ -15,12 +14,26 @@ export default function Hero() {
         </h1>
         <p className="hero-copy">{hero.copy}</p>
         <div className="hero-actions">
-          <Link className="button button--primary" to="/servizi">
+          <a
+            className="button button--primary"
+            href="#servizi"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector('#servizi')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             {hero.ctaPrimary} <MoveRight size={18} />
-          </Link>
-          <Link className="text-link" to="/clienti">
+          </a>
+          <a
+            className="text-link"
+            href="#clienti"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector('#clienti')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             {hero.ctaSecondary} <ArrowUpRight size={17} />
-          </Link>
+          </a>
         </div>
         <div className="hero-meta">
           {hero.stats.map((stat) => (

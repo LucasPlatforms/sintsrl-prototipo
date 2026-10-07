@@ -11,7 +11,6 @@ export default function ReferenzeSection() {
               {referenzeIntro.heading[0]}<br /><span>{referenzeIntro.heading[1]}</span>
             </h2>
           </div>
-          <p>{referenzeIntro.description}</p>
         </div>
         <div className="case-study-grid">
           {caseStudies.map((cs) => (

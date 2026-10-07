@@ -27,13 +27,13 @@ export const contatti: ContactInfo = {
 export const mapsLink = 'https://maps.google.com/?q=Via+Solferino+81+Meda';
 
 export const navItems = [
-  { label: 'Chi siamo', href: '/chi-siamo' },
-  { label: 'Servizi', href: '/servizi' },
-  { label: 'Clienti', href: '/clienti' },
-  { label: 'Contatti', href: '/contatti' },
+  { label: 'Chi siamo', href: '#azienda' },
+  { label: 'Servizi', href: '#servizi' },
+  { label: 'Clienti', href: '#clienti' },
+  { label: 'Contatti', href: '#contatti' },
 ];
 
 export const navCta = {
   label: 'Parliamone',
-  href: '/contatti',
+  href: '#contatti',
 };

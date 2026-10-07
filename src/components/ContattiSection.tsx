@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
 import { contattiSection } from '@/data/azienda';
 import { contatti, mapsLink } from '@/data/contatti';
+import ContactForm from '@/components/ContactForm';
 
 export default function ContattiSection() {
   return (
@@ -15,6 +16,14 @@ export default function ContattiSection() {
             {contattiSection.heading[0]}<br /><span>{contattiSection.heading[1]}</span>
           </h2>
           <p className="location-copy">{contattiSection.copy}</p>
+          <div className="contact-links contact-links--light">
+            <a href={`mailto:${contatti.email}`}>
+              <Mail size={18} /> {contatti.email}
+            </a>
+            <a href={contatti.telefonoLink}>
+              <Phone size={18} /> {contatti.telefono}
+            </a>
+          </div>
           <a
             className="text-link text-link--light"
             href={mapsLink}
@@ -29,21 +38,7 @@ export default function ContattiSection() {
           <h3>
             {contattiSection.panelHeading[0]}<br /><em>{contattiSection.panelHeading[1]}</em>
           </h3>
-          <div className="contact-links">
-            <a href={`mailto:${contatti.email}`}>
-              <Mail size={18} /> {contatti.email}
-            </a>
-            <a href={contatti.telefonoLink}>
-              <Phone size={18} /> {contatti.telefono}
-            </a>
-          </div>
-          <div className="address">
-            <MapPin size={17} />
-            <span>
-              {contatti.ragioneSociale}<br />
-              {contatti.indirizzo} — {contatti.cap} {contatti.citta} ({contatti.provincia})
-            </span>
-          </div>
+          <ContactForm />
         </div>
       </div>
     </section>

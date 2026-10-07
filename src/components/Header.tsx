@@ -1,13 +1,21 @@
 import { useState } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
 import BrandMark from './BrandMark';
 import { navItems, navCta } from '@/data/contatti';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
+  const [activeSection, setActiveSection] = useState<string>('');
   const closeMenu = () => setMenuOpen(false);
+
+  const handleClick = (href: string) => {
+    closeMenu();
+    setActiveSection(href);
+    const el = document.querySelector(href);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <header className="site-header">
@@ -18,24 +26,28 @@ export default function Header() {
           aria-label="Navigazione principale"
         >
           {navItems.map((item) => (
-            <NavLink
+            <a
               key={item.href}
-              to={item.href}
-              onClick={closeMenu}
-              className={({ isActive }) =>
-                isActive ? 'nav-link nav-link--active' : 'nav-link'
-              }
+              href={item.href}
+              onClick={(e) => {
+                e.preventDefault();
+                handleClick(item.href);
+              }}
+              className={`nav-link ${activeSection === item.href ? 'nav-link--active' : ''}`}
             >
               {item.label}
-            </NavLink>
+            </a>
           ))}
-          <Link
+          <a
             className="nav-cta"
-            to={navCta.href}
-            onClick={closeMenu}
+            href={navCta.href}
+            onClick={(e) => {
+              e.preventDefault();
+              handleClick(navCta.href);
+            }}
           >
             {navCta.label} <ArrowUpRight size={16} />
-          </Link>
+          </a>
         </nav>
         <button
           className="menu-toggle"
