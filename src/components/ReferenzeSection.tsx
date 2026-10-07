@@ -13,14 +13,14 @@ export default function ReferenzeSection() {
           </div>
           <p>{referenzeIntro.description}</p>
         </div>
-        <div className="case-study-list">
+        <div className="case-study-grid">
           {caseStudies.map((cs) => (
-            <article className="case-study" key={cs.client}>
-              <div className="case-study__media">
+            <article className="case-study-card" key={cs.client}>
+              <div className="case-study-card__media">
                 <img src={cs.image} alt={cs.alt} loading="lazy" />
               </div>
-              <div className="case-study__body">
-                <span className="case-study__client">{cs.client}</span>
+              <div className="case-study-card__body">
+                <span className="case-study-card__client">{cs.client}</span>
                 <p>{cs.description}</p>
               </div>
             </article>

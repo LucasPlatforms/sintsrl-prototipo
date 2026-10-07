@@ -15,7 +15,7 @@ export const hero = {
   copy: 'Progettiamo la sicurezza di luoghi, persone e sistemi con competenza tecnica e una visione sempre concreta.',
   ctaPrimary: 'Scopri cosa facciamo',
   ctaSecondary: 'I nostri clienti',
-  aside: 'Scorri per conoscere SINT',
+
   stats: [
     { value: '1990', label: 'anno di fondazione' },
     { value: '100+', label: 'siti coordinati per Terna' },
@@ -24,7 +24,7 @@ export const hero = {
 };
 
 export const azienda = {
-  kicker: '01 — L\'azienda',
+  kicker: 'L\'azienda',
   heading: ['La conoscenza è la', 'chiave del successo.'],
   paragraphs: [
     'SINT nasce nel gennaio 1990 per rispondere alle problematiche della sicurezza, grazie alle conoscenze accumulate dal suo fondatore, MARIO VAGO, che negli anni precedenti aveva ricoperto incarichi di Responsabile in importanti industrie del settore.',
@@ -62,7 +62,7 @@ export const chiSiamoPage = {
 };
 
 export const contattiSection = {
-  kicker: '04 — Dove siamo',
+  kicker: 'Dove siamo',
   heading: ['Vicini alle', 'tue esigenze.'],
   copy: 'La nostra sede operativa è a Meda, nel cuore della Brianza. Lavoriamo in tutta Italia.',
   mapsLabel: 'Apri su Google Maps',

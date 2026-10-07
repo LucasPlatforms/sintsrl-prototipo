@@ -31,10 +31,6 @@ export default function Hero() {
           ))}
         </div>
       </div>
-      <div className="hero-aside">
-        <span>{hero.aside}</span>
-        <div />
-      </div>
     </section>
   );
 }

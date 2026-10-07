@@ -65,7 +65,7 @@ export const clientiPage = {
 };
 
 export const referenzeIntro = {
-  kicker: '03 — Case study',
+  kicker: 'Case study',
   heading: ['Scelti da chi', 'non può rischiare.'],
   description:
     'Non un elenco di loghi, ma storie concrete. Ogni progetto racconta come abbiamo trasformato un\'esigenza di sicurezza in un sistema funzionante e verificato.',
