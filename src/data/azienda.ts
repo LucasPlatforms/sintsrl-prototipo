@@ -10,7 +10,7 @@ export interface TeamMember {
 }
 
 export const hero = {
-  eyebrow: 'Sicurezza, metodo, visione',
+  eyebrow: '',
   title: ['Proteggiamo ciò', 'che conta.'],
   copy: 'Progettiamo la sicurezza di luoghi, persone e sistemi con competenza tecnica e una visione sempre concreta.',
   ctaPrimary: 'Scopri cosa facciamo',
