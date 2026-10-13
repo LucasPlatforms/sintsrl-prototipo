@@ -21,7 +21,7 @@ export const caseStudies: CaseStudy[] = [
       'Building automation per la sede e i punti vendita: gestione accessi, videosorveglianza e supervisione centralizzata.',
     image:
       '',
-    alt: 'Edificio moderno con telecamera di sorveglianza',
+    alt: 'Logo Ferragamo',
     settore: 'Retail',
   },
   {
@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
       'Supervisione regionale e nazionale dei sistemi di sicurezza su siti distribuiti, con reporting centralizzato e adeguamento normativo.',
     image:
       '',
-    alt: 'Server rack con illuminazione blu in data center',
+    alt: 'Logo Terna',
     settore: 'Energia',
   },
 ];
