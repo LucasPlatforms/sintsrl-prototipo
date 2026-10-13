@@ -39,7 +39,7 @@ export const team: TeamMember[] = [
     name: 'Ing. Daniele Asnaghi',
     role: 'Direttore tecnico',
     qualifications: [
-      "Membro dell'elenco Nazionale italiano degli esperti di Prevenzione incendi",
+      "Membro dell'elenco Nazionale italiano degli esperti di <b>Prevenzione incendi</b>",
       "Membro dell'elenco della regione Lombardia degli esperti per la Verifica degli impianti elettrici e meccanici",
       "Membro dell'elenco dei Collaudatori della Regione Lombardia",
       "Membro dell'elenco Nazionale degli esperti per la stesura dei piani per la sicurezza nei cantieri",
