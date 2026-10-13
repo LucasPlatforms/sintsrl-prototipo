@@ -63,6 +63,6 @@ export const clientiPage = {
 };
 
 export const referenzeIntro = {
-  kicker: 'Case study',
-  heading: ['Scelti da chi', 'non può rischiare.'],
+  kicker: 'Clienti',
+  heading: ['Titolo', 'titolo.'],
 };
