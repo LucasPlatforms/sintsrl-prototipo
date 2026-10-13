@@ -15,11 +15,6 @@ export default function AziendaSection() {
               <p key={i}>{p}</p>
             ))}
           </div>
-          <div className="principles">
-            {azienda.principles.map((principle) => (
-              <span key={principle}><Check size={16} /> {principle}</span>
-            ))}
-          </div>
           <div className="partnership">
             <span><Check size={16} /> {azienda.partnership}</span>
           </div>
