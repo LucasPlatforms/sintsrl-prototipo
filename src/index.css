@@ -125,7 +125,7 @@ a {
   position: absolute;
   inset: 0 0 0 52%;
   background: linear-gradient(135deg, #dfe9de, #edf1eb 45%, #cddfd0);
-  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(23% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .hero-grid::after {
