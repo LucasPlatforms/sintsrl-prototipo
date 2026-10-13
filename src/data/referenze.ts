@@ -20,7 +20,7 @@ export const caseStudies: CaseStudy[] = [
     description:
       'Building automation per la sede e i punti vendita: gestione accessi, videosorveglianza e supervisione centralizzata.',
     image:
-      'https://images.pexels.com/photos/558630/pexels-photo-558630.png?auto=compress&cs=tinysrgb&h=650&w=940',
+      '',
     alt: 'Edificio moderno con telecamera di sorveglianza',
     settore: 'Retail',
   },
@@ -29,7 +29,7 @@ export const caseStudies: CaseStudy[] = [
     description:
       'Supervisione regionale e nazionale dei sistemi di sicurezza su siti distribuiti, con reporting centralizzato e adeguamento normativo.',
     image:
-      'https://images.pexels.com/photos/37730211/pexels-photo-37730211.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '',
     alt: 'Server rack con illuminazione blu in data center',
     settore: 'Energia',
   },
