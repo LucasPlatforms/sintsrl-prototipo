@@ -49,7 +49,7 @@ export const serviziPage = {
 };
 
 export const serviziIntro = {
-  kicker: 'Cosa facciamo',
+  kicker: 'Servizi',
   heading: ['La sicurezza,', 'progettata bene.'],
   paragraphs: [
     {
