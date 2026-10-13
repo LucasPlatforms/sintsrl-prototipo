@@ -62,7 +62,7 @@ export const chiSiamoPage = {
 
 export const contattiSection = {
   kicker: 'Contatti',
-  heading: ['Vicini alle', 'tue esigenze.'],
+  heading: ['Titolo', 'titolo.'],
   copy: 'La nostra sede operativa è a Meda, nel cuore della Brianza. Lavoriamo in tutta Italia.',
   mapsLabel: 'Apri su Google Maps',
   panelKicker: 'Parliamo del tuo progetto',
