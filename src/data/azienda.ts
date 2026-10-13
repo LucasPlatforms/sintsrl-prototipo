@@ -12,14 +12,14 @@ export interface TeamMember {
 export const hero = {
   eyebrow: '',
   title: ['Titolo', 'titolo.'],//'Proteggiamo ciò', 'che conta.'
-  copy: 'Progettiamo la sicurezza di luoghi, persone e sistemi con competenza tecnica e una visione sempre concreta.',
+  copy: 'Progettiamo la sicurezza di luoghi, persone e sistemi con competenza tecnica.', //Progettiamo la sicurezza di luoghi, persone e sistemi con competenza tecnica e una visione sempre concreta.
   ctaPrimary: 'Scopri cosa facciamo',
   ctaSecondary: 'I nostri clienti',
 
   stats: [
     { value: '1990', label: 'anno di fondazione' },
-    { value: '100+', label: 'siti coordinati per Terna' },
-    { value: '24', label: 'centri Poste Italiane' },
+    { value: '100', label: 'dato' },
+    { value: '100', label: 'dato' },
   ] as HeroStat[],
 };
 
@@ -30,7 +30,6 @@ export const azienda = {
     'SINT nasce nel gennaio 1990 per rispondere alle problematiche della sicurezza, grazie alle conoscenze accumulate dal suo fondatore, MARIO VAGO, che negli anni precedenti aveva ricoperto incarichi di Responsabile in importanti industrie del settore.',
     'SINT, oggi, opera nello studio, la progettazione, la realizzazione e l\'implementazione di interventi speciali di Sicurezza globale, impianti elettrici e di climatizzazione volti alla riduzione del rischio ed al contenimento dei costi.',
   ],
-  principles: ['Competenza', 'Responsabilità', 'Affidabilità'],
   partnership: 'In partnership con Leviton, produttore globale certificato, per soluzioni di cabling e networking.',
 };
 
