@@ -46,12 +46,12 @@ export const team: TeamMember[] = [
       "Membro dell'elenco della regione Lombardia degli esperti Certificatori in materia Energetica",
     ],
   },
-  { name: 'Ing. Stefano Galli', role: 'Progettazione strutturale, direzione lavori e coordinamento della sicurezza' },
-  { name: 'Ing. Dario Sormani', role: 'Progettazione hardware di ponti radio e componenti per satelliti' },
-  { name: 'Arch. Giusi Valente', role: 'Pratiche di prevenzione incendi e permessi' },
-  { name: 'Arch. Katia Palena', role: 'Computi metrici, disciplinari di gara e disegno CAD' },
-  { name: 'Ing. Arch. Annamaria Seveso', role: 'Progettazione architettonica, strutturale e di restauro' },
-  { name: 'Arch. Pierluca Arosio', role: 'Progettazione architettonica e pianificazione urbana' },
+  { name: 'Ing. Stefano Galli', role: 'Progettista strutturale, direzione lavori e coordinamento della sicurezza' },
+  { name: 'Ing. Dario Sormani', role: 'Progettista hardware ponti radio e componenti per satelliti' },
+  { name: 'Arch. Giusi Valente', role: 'Pratiche di prevenzione incendi: CPI, permessistica' },
+  { name: 'Arch. Katia Palena', role: 'Stesura computi metrici, disciplinari di gara, disegnatore CAD' },
+  { name: 'Ing. Arch. Annamaria Seveso', role: 'Progettista architettonico, strutturale e di restauro' },
+  { name: 'Arch. Pierluca Arosio', role: 'Progettista architettonico e pianificatore urbano' },
 ];
 
 export const chiSiamoPage = {
