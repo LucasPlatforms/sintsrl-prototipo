@@ -18,8 +18,6 @@ export const hero = {
 
   stats: [
     { value: '1990', label: 'anno di fondazione' },
-    { value: '100', label: 'dato' },
-    { value: '100', label: 'dato' },
   ] as HeroStat[],
 };
 
