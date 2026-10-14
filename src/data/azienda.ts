@@ -26,7 +26,7 @@ export const azienda = {
   heading: ['La conoscenza è la', 'chiave del successo.'],
   paragraphs: [
     { text: "SINT nasce nel gennaio 1990 per rispondere alle problematiche della sicurezza, grazie alle conoscenze accumulate dal suo fondatore, MARIO VAGO, che negli anni precedenti aveva ricoperto incarichi di Responsabile in importanti industrie del settore.", bold: "MARIO VAGO"},
-    { text: "SINT, oggi, opera nello studio, la progettazione, la realizzazione e l\'implementazione di interventi speciali di Sicurezza globale, impianti elettrici e di climatizzazione volti alla riduzione del rischio ed al contenimento dei costi."},
+    { text: "SINT, oggi, opera nello studio, la progettazione, la realizzazione e l'implementazione di interventi speciali di Sicurezza globale, impianti elettrici e di climatizzazione volti alla riduzione del rischio ed al contenimento dei costi."},
   ],
   partnership: 'In partnership con Leviton, produttore globale certificato, per soluzioni di cabling e networking.',
 };
