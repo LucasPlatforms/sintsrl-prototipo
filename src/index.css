@@ -149,8 +149,8 @@ a {
   color: var(--green);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .eyebrow {
@@ -441,18 +441,20 @@ h3 em {
 }
 
 .team {
-  margin-top: 48px;
   border-top: 1px solid var(--line);
   padding-top: 36px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 28% 1fr;
+  gap: 6%;
 }
 
 .team-title {
   color: var(--green);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 11px;
-  font-weight: 700;
-  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .team-grid {
@@ -492,6 +494,11 @@ h3 em {
   line-height: 1.6;
   padding-left: 14px;
   position: relative;
+}
+
+.team-member__qualifications li strong {
+  color: var(--ink);
+  font-weight: 800;
 }
 
 .team-member__qualifications li::before {
@@ -1043,6 +1050,11 @@ h3 em {
   .location-grid {
     grid-template-columns: 1fr;
     gap: 34px;
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .intro-text-grid {

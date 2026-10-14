@@ -18,24 +18,32 @@ export default function AziendaSection() {
           <div className="partnership">
             <span><Check size={16} /> {azienda.partnership}</span>
           </div>
-          <div className="team">
-            <p className="team-title">Il team</p>
-            <div className="team-grid">
-              {team.map((member) => (
-                <div className="team-member" key={member.name}>
-                  <p className="team-member__name">{member.name}</p>
-                  <p className="team-member__role">{member.role}</p>
-                  {member.qualifications && (
-                    <ul className="team-member__qualifications">
-                      {member.qualifications.map((q, i) => (
-                        <li key={i}>{q}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
+        </div>
+      </div>
+      <div className="container team">
+        <p className="team-title">Il team</p>
+        <div className="team-grid">
+          {team.map((member) => (
+            <div className="team-member" key={member.name}>
+              <p className="team-member__name">{member.name}</p>
+              <p className="team-member__role">{member.role}</p>
+              {member.qualifications && (
+                <ul className="team-member__qualifications">
+                  {member.qualifications.map((q, i) => (
+                    <li key={i}>
+                      {typeof q === 'string' ? q : (
+                        <>
+                          {q.text.split(q.bold!)[0]}
+                          <strong>{q.bold}</strong>
+                          {q.text.split(q.bold!)[1]}
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
