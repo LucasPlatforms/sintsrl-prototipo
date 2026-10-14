@@ -4,7 +4,7 @@ import { hero } from '@/data/azienda';
 export default function Hero() {
   return (
     <section className="hero">
-       <img class=""
+       <img className=""
        src="/sint_srl_cover.jpg"
        alt=""
        fetchpriority="high">
