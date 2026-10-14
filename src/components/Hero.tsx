@@ -4,6 +4,10 @@ import { hero } from '@/data/azienda';
 export default function Hero() {
   return (
     <section className="hero">
+       <img class="hero__bg"
+       src="/hero-sint.jpg"
+       alt=""
+       fetchpriority="high">
       <div className="hero-grid" />
       <div className="container hero-content">
         <h1>
