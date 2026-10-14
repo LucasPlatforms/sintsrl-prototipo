@@ -3,10 +3,15 @@ export interface HeroStat {
   label: string;
 }
 
+export interface QualificationPart {
+  text: string;
+  bold?: boolean;
+}
+
 export interface TeamMember {
   name: string;
   role: string;
-  qualifications?: string[];
+  qualifications?: QualificationPart[][];
 }
 
 export const hero = {
@@ -39,11 +44,26 @@ export const team: TeamMember[] = [
     name: 'Ing. Daniele Asnaghi',
     role: 'Direttore tecnico',
     qualifications: [
-      "Membro dell'elenco Nazionale italiano degli esperti di Prevenzione incendi",
-      "Membro dell'elenco della regione Lombardia degli esperti per la Verifica degli impianti elettrici e meccanici",
-      "Membro dell'elenco dei Collaudatori della Regione Lombardia",
-      "Membro dell'elenco Nazionale degli esperti per la stesura dei piani per la sicurezza nei cantieri",
-      "Membro dell'elenco della regione Lombardia degli esperti Certificatori in materia Energetica",
+      [
+        { text: "Membro dell'elenco Nazionale italiano degli esperti di " },
+        { text: "Prevenzione incendi", bold: true },
+      ],
+      [
+        { text: "Membro dell'elenco della regione Lombardia degli esperti per la " },
+        { text: "Verifica degli impianti elettrici e meccanici", bold: true },
+      ],
+      [
+        { text: "Membro dell'elenco dei " },
+        { text: "Collaudatori della Regione Lombardia", bold: true },
+      ],
+      [
+        { text: "Membro dell'elenco Nazionale degli esperti per la stesura dei piani per la " },
+        { text: "sicurezza nei cantieri", bold: true },
+      ],
+      [
+        { text: "Membro dell'elenco della regione Lombardia degli esperti " },
+        { text: "Certificatori in materia Energetica", bold: true },
+      ],
     ],
   },
   { name: 'Ing. Stefano Galli', role: 'Progettista strutturale, direzione lavori e coordinamento della sicurezza' },
