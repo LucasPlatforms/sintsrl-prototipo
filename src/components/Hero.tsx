@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="hero">
        <img class="hero__bg"
-       src="/sint_srl_cover.jpg"
+       src="sint_srl_cover.jpg"
        alt=""
        fetchpriority="high">
       <div className="hero-grid" />
