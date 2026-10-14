@@ -10,25 +10,30 @@ export default function ServiziSection() {
             <h2>
               {serviziIntro.heading[0]}<br /><span>{serviziIntro.heading[1]}</span>
             </h2>
-            <div className="intro-text-grid">
-              {serviziIntro.paragraphs.map((p, i) => (
-                <div key={i} className="structured-paragraph">
-                  <p className="structured-paragraph__lead">{p.lead}</p>
-                  <ul className="structured-paragraph__items">
-                    {p.items.map((item, j) => (
-                      <li key={j}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
-        <div className="service-grid">
-          {services.map((service) => (
-            <article className="service-card" key={service.title}>
-              <h3>{service.title}</h3>
-              <p>{service.text}</p>
+
+        <div className="servizi-intro-panels">
+          {serviziIntro.paragraphs.map((p, i) => (
+            <div key={i} className="servizi-intro-panel">
+              <p className="servizi-intro-panel__lead">{p.lead}</p>
+              <ul className="servizi-intro-panel__items">
+                {p.items.map((item, j) => (
+                  <li key={j}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="servizi-list">
+          {services.map((service, i) => (
+            <article className="servizi-item" key={service.title}>
+              <span className="servizi-item__num">{String(i + 1).padStart(2, '0')}</span>
+              <div className="servizi-item__body">
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+              </div>
             </article>
           ))}
         </div>
