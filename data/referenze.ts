@@ -19,8 +19,7 @@ export const caseStudies: CaseStudy[] = [
     client: 'Salvatore Ferragamo',
     description:
       'Building automation per la sede e i punti vendita: gestione accessi, videosorveglianza e supervisione centralizzata.',
-    image:
-      '',
+    image: '',
     alt: 'Logo Ferragamo',
     settore: 'Retail',
   },
@@ -28,8 +27,7 @@ export const caseStudies: CaseStudy[] = [
     client: 'Terna',
     description:
       'Supervisione regionale e nazionale dei sistemi di sicurezza su siti distribuiti, con reporting centralizzato e adeguamento normativo.',
-    image:
-      '',
+    image: '',
     alt: 'Logo Terna',
     settore: 'Energia',
   },

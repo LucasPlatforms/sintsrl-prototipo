@@ -1,5 +1,5 @@
-import { Check } from 'lucide-react';
-import { azienda, team } from '@/data/azienda';
+import { Check } from "lucide-react";
+import { azienda, team } from "@/data/azienda";
 
 export default function AziendaSection() {
   return (
@@ -31,7 +31,7 @@ export default function AziendaSection() {
                 <ul className="team-member__qualifications">
                   {member.qualifications.map((q, i) => (
                     <li key={i}>
-                      {typeof q === 'string' ? q : (
+                      {typeof q === "string" ? q : (
                         <>
                           {q.text.split(q.bold!)[0]}
                           <strong>{q.bold}</strong>

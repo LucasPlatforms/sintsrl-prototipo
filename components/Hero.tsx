@@ -1,10 +1,11 @@
-import { MoveRight, ArrowUpRight } from 'lucide-react';
-import { hero } from '@/data/azienda';
+"use client";
+
+import { MoveRight, ArrowUpRight } from "lucide-react";
+import { hero } from "@/data/azienda";
 
 export default function Hero() {
   return (
     <section className="hero">
-      
       <div className="hero-grid" />
       <div className="container hero-content">
         <h1>
@@ -17,7 +18,7 @@ export default function Hero() {
             href="#servizi"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector('#servizi')?.scrollIntoView({ behavior: 'smooth' });
+              document.querySelector("#servizi")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             {hero.ctaPrimary} <MoveRight size={18} />
@@ -27,7 +28,7 @@ export default function Hero() {
             href="#clienti"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector('#clienti')?.scrollIntoView({ behavior: 'smooth' });
+              document.querySelector("#clienti")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             {hero.ctaSecondary} <ArrowUpRight size={17} />

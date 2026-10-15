@@ -1,6 +1,6 @@
-import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
-import { contattiSection } from '@/data/azienda';
-import { contatti, mapsLink } from '@/data/contatti';
+import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
+import { contattiSection } from "@/data/azienda";
+import { contatti, mapsLink } from "@/data/contatti";
 
 export default function ContattiSection() {
   return (

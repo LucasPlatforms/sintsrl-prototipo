@@ -1,11 +1,13 @@
-import { useState } from 'react';
-import { ArrowUpRight, Menu, X } from 'lucide-react';
-import BrandMark from './BrandMark';
-import { navItems, navCta } from '@/data/contatti';
+"use client";
+
+import { useState } from "react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
+import BrandMark from "./BrandMark";
+import { navItems, navCta } from "@/data/contatti";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>('');
+  const [activeSection, setActiveSection] = useState<string>("");
   const closeMenu = () => setMenuOpen(false);
 
   const handleClick = (href: string) => {
@@ -13,7 +15,7 @@ export default function Header() {
     setActiveSection(href);
     const el = document.querySelector(href);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -22,7 +24,7 @@ export default function Header() {
       <div className="container header-inner">
         <BrandMark />
         <nav
-          className={`main-nav ${menuOpen ? 'main-nav--open' : ''}`}
+          className={`main-nav ${menuOpen ? "main-nav--open" : ""}`}
           aria-label="Navigazione principale"
         >
           {navItems.map((item) => (
@@ -33,7 +35,7 @@ export default function Header() {
                 e.preventDefault();
                 handleClick(item.href);
               }}
-              className={`nav-link ${activeSection === item.href ? 'nav-link--active' : ''}`}
+              className={`nav-link ${activeSection === item.href ? "nav-link--active" : ""}`}
             >
               {item.label}
             </a>
@@ -52,7 +54,7 @@ export default function Header() {
         <button
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label={menuOpen ? 'Chiudi menu' : 'Apri menu'}
+          aria-label={menuOpen ? "Chiudi menu" : "Apri menu"}
           aria-expanded={menuOpen}
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}

@@ -1,6 +1,8 @@
-import { ChevronDown } from 'lucide-react';
-import BrandMark from './BrandMark';
-import { contatti } from '@/data/contatti';
+"use client";
+
+import { ChevronDown } from "lucide-react";
+import BrandMark from "./BrandMark";
+import { contatti } from "@/data/contatti";
 
 export default function Footer() {
   return (
@@ -23,7 +25,7 @@ export default function Footer() {
           className="back-top"
           onClick={(e) => {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
           Torna su <ChevronDown size={16} />

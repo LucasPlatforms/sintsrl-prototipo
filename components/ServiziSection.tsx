@@ -1,4 +1,4 @@
-import { serviziIntro, services } from '@/data/servizi';
+import { serviziIntro, services } from "@/data/servizi";
 
 export default function ServiziSection() {
   return (
@@ -29,7 +29,7 @@ export default function ServiziSection() {
         <div className="servizi-list">
           {services.map((service, i) => (
             <article className="servizi-item" key={service.title}>
-              <span className="servizi-item__num">{String(i + 1).padStart(2, '0')}</span>
+              <span className="servizi-item__num">{String(i + 1).padStart(2, "0")}</span>
               <div className="servizi-item__body">
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>

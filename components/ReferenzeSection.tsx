@@ -1,4 +1,5 @@
-import { referenzeIntro, caseStudies, clientNames } from '@/data/referenze';
+import Image from "next/image";
+import { referenzeIntro, caseStudies, clientNames } from "@/data/referenze";
 
 export default function ReferenzeSection() {
   return (
@@ -16,7 +17,26 @@ export default function ReferenzeSection() {
           {caseStudies.map((cs) => (
             <article className="case-study-card" key={cs.client}>
               <div className="case-study-card__media">
-                <img src={cs.image} alt={cs.alt} loading="lazy" />
+                {cs.image ? (
+                  <Image
+                    src={cs.image}
+                    alt={cs.alt}
+                    fill
+                    style={{
+                      objectFit: cs.image.endsWith(".svg") ? "contain" : "cover",
+                      padding: cs.image.endsWith(".svg") ? "24px" : 0,
+                    }}
+                    sizes="(max-width: 800px) 100vw, 33vw"
+                  />
+                ) : (
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      background: "#f5f6f3",
+                    }}
+                  />
+                )}
               </div>
               <div className="case-study-card__body">
                 <span className="case-study-card__client">{cs.client}</span>
