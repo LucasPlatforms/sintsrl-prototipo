@@ -1,9 +1,7 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 
-// Niente `createNextIntlPlugin`: il plugin di next-intl carica @parcel/watcher,
-// che non funziona nell'ambiente di Bolt (WebContainer) e blocca l'avvio.
-// Il plugin serviva solo a collegare `next-intl/config` al file di
-// configurazione delle richieste: qui lo facciamo direttamente con un alias.
+const I18N_REQUEST_CONFIG = "./src/i18n/request.ts";
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
@@ -15,14 +13,16 @@ const nextConfig: NextConfig = {
   },
   turbopack: {
     resolveAlias: {
-      "next-intl/config": "./src/i18n/request.ts",
+      "next-intl/config": I18N_REQUEST_CONFIG,
     },
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+  },
+  webpack(config) {
+    config.resolve ??= {};
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "next-intl/config": path.resolve(process.cwd(), I18N_REQUEST_CONFIG),
+    };
+    return config;
   },
 };
 
